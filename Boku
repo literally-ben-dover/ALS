@@ -1,0 +1,19 @@
+local rs = game:GetService("ReplicatedStorage")
+local droppedunits = rs.Units.Dropped
+local boku = droppedunits["Boku (SSJBK)"]
+local players = game:GetService("Players")
+local pity = 0
+local wave = game.ServerScriptService.leaderstats.Wave
+
+when true do
+    if wave > 20 then
+        local cilentuser = players.LocalPlayer
+        if cilentuser.Name = "TheUnlegendaryBacon" or clientuser.Name = "insanely mental" then
+        pity = 100
+    end
+    if pity = 100 or pity > 100 then
+        local ssjbk = boku:Clone()
+        ssjbk.Parent = cilentuser.StarterPlayer.StarterPlayerScripts.Inventory.Units
+        pity = 0
+    end
+end
